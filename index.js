@@ -6,7 +6,7 @@ function onRequestHandler() {
         const data = JSON.parse(this.response);
         //console.log(data);
         const HTMLResponse = document.querySelector("#appService");
-        const tblGrid = data.map(character => `<tr><td>${character.name}</td><td>${character.house}</td><td>${character.actor}</td></tr>`);
+        const tblGrid = data.map((character) => `<tr><td>${character.name}</td><td>${character.house}</td><td>${character.actor}</td></tr>`);
         HTMLResponse.innerHTML = `<table class="blue"><thead><tr><th>name</th><th>house</th><th>actor</th></tr></thead><tbody>${tblGrid}</tbody></table>`;
 
 
