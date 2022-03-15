@@ -14,7 +14,6 @@ fetch(`${API_URL}/api/characters`)
         console.log(characters);
         HTMLResponse.innerHTML = `<table class="blue"><thead><tr><th>name</th><th>house</th><th>actor</th></tr></thead><tbody>${tblGrid}</tbody></table>`;
     });*/
-
 const API_URL = "http://hp-api.herokuapp.com";
 const xhr = new XMLHttpRequest();
 function onRequestHandler() {
